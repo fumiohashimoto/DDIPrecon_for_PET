@@ -1,6 +1,6 @@
 # PET Image Reconstruction Using Deep Diffusion Image Prior (DDIP)
 
-[Fumio Hashimoto](https://sites.google.com/view/fumio-hashimoto/) and [Kuang Gong](https://gong-lab.com/),
+[Fumio Hashimoto](https://sites.google.com/view/fumio-hashimoto/) and [Kuang Gong](https://gong-lab.com/)
 
 This repository provides code for diffusion-based PET image
 reconstruction using the Deep Diffusion Image Prior (DDIP) framework.
