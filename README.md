@@ -9,6 +9,10 @@ Paper: F. Hashimoto and K. Gong, PET Image Reconstruction Using Deep
 Diffusion Image Prior, IEEE Transactions on Medical Imaging, 2026.
 https://ieeexplore.ieee.org/document/11369249
 
+## Overview
+
+![Framework](figs/fig1.svg)
+
 ## Requirements
 
 Create the environment using:
