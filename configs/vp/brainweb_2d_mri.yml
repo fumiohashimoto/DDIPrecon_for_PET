@@ -1,0 +1,58 @@
+data:
+    dataset: "Brainweb_2D"
+    image_size: 192
+    channels: 3
+    root: "./data"
+    vol_name: "None"
+
+# id training data (or for regularization)
+data_id:
+    dataset: "Brainweb_2D"
+    root: "Brainweb/FDG"
+
+model:
+    model_ckpt: "checkpoints/model1100000.pt"
+    type: "sr"
+    large_size: 192
+    small_size: 192
+    num_channels: 128
+    num_res_blocks: 2
+    attention_resolutions: "32,16"
+    dropout: 0.1
+    use_fp16: true
+    learn_sigma: true
+    resblock_updown: true
+    use_scale_shift_norm: true
+    num_head_channels: 64
+    var_type: 'fixedsmall'
+
+diffusion:
+    use_ddim: true
+    beta_schedule: linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    num_diffusion_timesteps: 1000
+    rescale_learned_sigmas: false
+    rescale_timesteps: false
+
+sampling:
+    batch_size: 1
+    
+time_travel:
+    T_sampling: 100
+
+mri:
+    mask_type: uniform1d
+    acc_factor: 4
+    center_fraction: 0.08
+
+clip:
+    x0t: True
+    x0that: True
+
+projection_type: hard
+CG_iter: 5
+project_first: true
+project_later: false
+
+grad_type: ddnm

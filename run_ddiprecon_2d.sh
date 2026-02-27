@@ -1,0 +1,10 @@
+SAVE_DIR="./results"
+TEST_DIR="data/PET/brainweb/negative_MRI_mmr/"
+EPOCH="2"
+lora_rank="4"
+em_itr="5"
+em_beta="0.01"
+start_t="200"
+T_sampling="200"
+
+sh scripts/eval_PET_2d_ddiprecon.sh "$SAVE_DIR" "$TEST_DIR" "$EPOCH" "$lora_rank" "$T_sampling" "$start_t" "$em_itr" "$em_beta"

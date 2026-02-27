@@ -1,0 +1,14 @@
+name: ddiprecon
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - parallelproj
+  - pyyaml
+  - tqdm
+  - scikit-image
+  - cupy
+  - pip:
+      - torch==2.10.0
