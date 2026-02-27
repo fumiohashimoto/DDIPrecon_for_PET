@@ -154,10 +154,9 @@ class Diffusion(object):
         print("Loading test data")
         x_orig = []
         y_orig = []
-        sino = torch.from_numpy(np.load(test_root + 'sino/19-000.npy', allow_pickle=True))
+        sino = torch.from_numpy(np.load(test_root + '19-000_sino.npy', allow_pickle=True))
         print('Load data: ' + test_root)
-        test_root + 'sino/19-000.npy'
-        img = np.load(test_root + 'mri/19-000.npy', allow_pickle=True)
+        img = np.load(test_root + '19-000_mr.npy', allow_pickle=True)
         img = img / img.max()
         img = torch.from_numpy(img)
         z, h, w = torch.squeeze(img).shape

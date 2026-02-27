@@ -18,22 +18,19 @@ conda env create -f environment.yml
 conda activate ddip
 ```
 
-## Running Reconstruction
+## Quick Start
 
-1.  Confirm the model checkpoint and simulation data exist:
+1.  Download the pre-trained model from [this link](https://www.dropbox.com/scl/fi/4xyqttufeffg9mxc1fwfi/model1100000.pt?rlkey=v4gq7zsemgutln3anhl5ycwji&st=dysb2xr6&dl=0) and place it in the `./checkpoints/` directory.
 
-```
-checkpoints/model1100000.pt
-data/PET/brainweb/negative_MRI_mmr/
-```
+2.  Download the test data from [this link](https://www.dropbox.com/scl/fo/chwflsweh8pr4mjb6ck0c/AMW4qZnpRCOHzPIXg11EOOo?rlkey=eobjxfen9fj9ec596cqru8htw&st=e6pmc4c4&dl=0) and place it in the `./data/` directory.
 
-2.  Run:
+3.  Run:
 
 ```
 bash run_ddiprecon_2d.sh
 ```
 
-3.  Output:
+4.  Output:
 
 ```
 results/result.npy
