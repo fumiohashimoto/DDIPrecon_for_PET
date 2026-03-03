@@ -19,7 +19,7 @@ Create the environment using:
 
 ```
 conda env create -f environment.yml
-conda activate ddip
+conda activate ddiprecon
 ```
 
 ## Quick Start
